@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/id_coordinator_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/library_dimen_common_margin"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <tk.jamun.elements.circularimageview.CircularImageView
+                    android:id="@+id/id_circle_image"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    app:library_border_color="@color/colorPrimaryDark"
+                    app:library_border_width="2dp"
+                    app:srcCompat="@drawable/image_vd_user_default" />
+
+                <tk.jamun.elements.circularnetworkimageview.CircularNetworkImageView
+                    android:id="@+id/id_circle_network_image"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="@dimen/library_dimen_common_margin"
+                    android:layout_marginStart="@dimen/library_dimen_common_margin"
+                    app:library_border_color="@color/colorPrimaryDark"
+                    app:library_border_width="2dp"
+                    app:srcCompat="@drawable/image_vd_user_default" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:onClick="onClickPicker"
+                    android:text="Pickers" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:onClick="onClickCamerAndGallery"
+                    android:text="Camera and Gallery" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:onClick="onClickScanner"
+                    android:text="Scanner" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:onClick="onClickCalendar"
+                    android:text="Calendar" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:onClick="onClickUIComponent"
+                    android:text="UI Component" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:onClick="onClickSinglePagerBrowser"
+                    android:text="Single Pager Browser" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:onClick="onClickMultiPagerBrowser"
+                    android:text="Multi Pager Browser" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>
