@@ -6,18 +6,19 @@ Browser Library provide you two type of In-APP Browser Functionality with Event 
 
 2. `Multi Pager` allow you to create Multi Page In-App-Browser  with custom functions and Event Hanlding Approaches.
 
-### What's New? (0.0.1)
+### What's New? (0.0.2)
 * Stable official Version for Rapid Development.
 * Custom UI components with Single and Multi Pager Mode.
 * Easy Calling mechanism with instant reply via Listeners and custom functions support
 * All the views in the library are Screen compatible i.e. You can execute this library on different android screens including tabs.
 
-### Quality Measures? for (0.0.1)
+### Quality Measures? for (0.0.2)
 
 The following apps are using this library without facing any kind of Bugs.
 
 * **[SimplyBlood](https://play.google.com/store/apps/details?id=com.simplyblood)**
 * **[ZINI](https://play.google.com/store/apps/details?id=ai.zini)**,
+* **[SoundBoard](https://play.google.com/store/apps/details?id=in.soundboard)**,
 
 # Why this library?
 
@@ -48,7 +49,7 @@ allprojects {
 Step 2\. Add the dependency
 ```java
 dependencies {
-        compile 'tk.jamun.ui:browser:0.0.1'
+        compile 'tk.jamun.ui:browser:0.0.2'
 }
 ```
 
@@ -58,7 +59,7 @@ dependencies {
 <dependency>
   <groupId>tk.jamun.ui</groupId>
   <artifactId>browser</artifactId>
-  <version>0.0.1</version>
+  <version>0.0.2</version>
   <type>aar</type>
 </dependency>
 ```
@@ -93,7 +94,7 @@ dependencies {
 <dependency>
   <groupId>tk.jamun.ui</groupId>
   <artifactId>singlepagebrowser</artifactId>
-  <version>0.0.1</version>
+  <version>0.0.2</version>
   <type>aar</type>
 </dependency>
 ```
@@ -117,7 +118,7 @@ Step 2\. Add the dependency
 
 ```java
 dependencies {
-        compile 'tk.jamun.ui:mulitpagebrowser:0.0.1'
+        compile 'tk.jamun.ui:mulitpagebrowser:0.0.2'
 }
 ```
 #### Maven
@@ -125,7 +126,7 @@ dependencies {
 <dependency>
   <groupId>tk.jamun.ui</groupId>
   <artifactId>mulitpagebrowser</artifactId>
-  <version>0.0.1</version>
+  <version>0.0.2</version>
   <type>aar</type>
 </dependency>
 ```
@@ -145,17 +146,16 @@ new SinglePageBrowser().setOnClickListener(new Browser.OnClickListener() {
         }).startActivity(this, "https://github.com/Lib-Jamun/Browser");
 
 ```
-
 ------
 
-## 3. Multi Page Browser
+## 2. Multi Page Browser
 
 ```
 
 ```
 
 
-## 4. Additional Options
+## 3. Additional Options
 
 **1. **Share Picker Setup Details**
 
@@ -204,14 +204,21 @@ singlePageBrowser.setHorizontalScrollBarEnabled(boolean);
 singlePageBrowser.setSupportMultipleWindows(boolean);
 ```
 
+## 3. Critical Note
+
+**Progaurd Editing**
+
+```
+-keep class org.jsoup.**
+```
+
 > **To understand more how the library works, please take a look at the sample app.**
 
 ------
 
 # Dependency
 
-* Android Support Fragment Library ``v27.1.1``
-* Jamun Volley Library **[Volley](https://github.com/Lib-Jamun/Volley.git)**
+* Org.Jsoup Lib for URL meta parsing
 
 ## Credits
 
