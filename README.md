@@ -6,20 +6,28 @@ Browser Library provide you two type of In-APP Browser Functionality with Event 
 
 2. `Multi Pager` allow you to create Multi Page In-App-Browser  with custom functions and Event Hanlding Approaches.
 
-### What's New? (0.0.2)
+### What's New? {Latest Version}
 * Stable official Version for Rapid Development.
 * Custom UI components with Single and Multi Pager Mode.
 * Easy Calling mechanism with instant reply via Listeners and custom functions support
 * All the views in the library are Screen compatible i.e. You can execute this library on different android screens including tabs.
 
-### Quality Measures? for (0.0.2)
+### Quality Measures? for {Latest Version}
 
 The following apps are using this library without facing any kind of Bugs.
 
 * **[SimplyBlood](https://play.google.com/store/apps/details?id=com.simplyblood)**
 * **[ZINI](https://play.google.com/store/apps/details?id=ai.zini)**,
-* **[SoundBoard](https://play.google.com/store/apps/details?id=in.soundboard)**,
+* **[RentalBazar](https://play.google.com/store/apps/details?id=com.rentalbazaar)** 
+* **[DoubtCrusher](https://play.google.com/store/apps/details?id=com.doubtcrusher)**
+* **[BookAGround](https://play.google.com/store/apps/details?id=com.bookaground)**
+* **[PeyFree](https://play.google.com/store/apps/details?id=com.peyfree)**
+* **[ClueRace](https://play.google.com/store/apps/details?id=com.cluerace)**
+* **[QR/Barcode Scanner](https://play.google.com/store/apps/details?id=com.scanner.android)** 
+* **[Wall-E](https://play.google.com/store/apps/details?id=com.walle.android)**
+* **[CIS-Connect In Single](https://play.google.com/store/apps/details?id=com.connectinsingle)**
 
+------
 # Why this library?
 
 * This library competible with all screen sizes and device (Tab with 7' inches and 10'inches).
@@ -39,7 +47,7 @@ These lines are provided in Integration Part given Below
 
 Step 1\. Add the jCenter repository to your build file. Add it in your root build.gradle at the end of repositories:
 
-```java
+```
 allprojects {
   repositories {
         mavenCentral()
@@ -47,9 +55,22 @@ allprojects {
 }
 ```
 Step 2\. Add the dependency
-```java
+```
+Latest Version : 0.0.8
+
+Android
 dependencies {
-        compile 'tk.jamun.ui:browser:0.0.2'
+     compile 'tk.jamun.ui:browser:{Latest Version}'
+}
+
+AndroidX
+dependencies {
+     compile 'tk.jamunx.ui:browser:{Latest Version}'
+}
+
+Kotlin
+dependencies {
+     compile 'tk.jamun-ktx.ui:browser:{Latest Version}'
 }
 ```
 
@@ -57,9 +78,14 @@ dependencies {
 
 ```xml
 <dependency>
+Android
   <groupId>tk.jamun.ui</groupId>
+AndroidX
+  <groupId>tk.jamunx.ui</groupId>
+Kotlin
+  <groupId>tk.jamun-ktx.ui</groupId>
   <artifactId>browser</artifactId>
-  <version>0.0.2</version>
+ <version>{Latest Version}</version>
   <type>aar</type>
 </dependency>
 ```
@@ -223,7 +249,7 @@ singlePageBrowser.setSupportMultipleWindows(boolean);
 ## Credits
 
 Desgin & Developed by : **[Jatin Sahgal](https://www.linkedin.com/in/jatinsahgal/)**
- (**[Linkedin](https://www.linkedin.com/in/jatinsahgal/)** & **[Website](https://blog.jamun.tk)**) 
+ (**[Linkedin](https://www.linkedin.com/in/jatinsahgal/)** & **[Website](http://androidcodelab.com/)** & **[Github](https://github.com/Lib-Jamun)**) 
 
 ## More Library under Jamun
 
