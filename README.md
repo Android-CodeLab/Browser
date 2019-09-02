@@ -111,19 +111,45 @@ allprojects {
 Step 2\. Add the dependency
 
 ```java
+
+Latest Version : 0.0.8
+
+Android
 dependencies {
-        compile 'tk.jamun.ui:singlepagebrowser:0.0.1'
+     compile 'tk.jamun.ui:singlepagebrowser:{Latest Version}'
+}
+
+AndroidX
+dependencies {
+     compile 'tk.jamunx.ui:singlepagebrowser:{Latest Version}'
+}
+
+Kotlin
+dependencies {
+     compile 'tk.jamun-ktx.ui:singlepagebrowser:{Latest Version}'
 }
 ```
 #### Maven
 ```xml
 <dependency>
+ Android
   <groupId>tk.jamun.ui</groupId>
+AndroidX
+  <groupId>tk.jamunx.ui</groupId>
+Kotlin
+  <groupId>tk.jamun-ktx.ui</groupId>
   <artifactId>singlepagebrowser</artifactId>
   <version>0.0.2</version>
   <type>aar</type>
 </dependency>
 ```
+
+Single Page Browser | Options
+---- | ----
+![Jamun-Single-Page-Browser-Options](https://user-images.githubusercontent.com/38988514/64109990-81ef9600-cd9e-11e9-9b38-a68e4f652d17.png) | 
+![Jamun-Single-Page-Browser](https://user-images.githubusercontent.com/38988514/64109992-81ef9600-cd9e-11e9-93f3-0aecd34c1d78.png)
+
+
 
 ## Multi Page Browser
 
