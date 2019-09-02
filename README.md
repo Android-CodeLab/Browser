@@ -146,8 +146,7 @@ Kotlin
 
 Single Page Browser | Options
 ---- | ----
-![Jamun-Single-Page-Browser-Options](https://user-images.githubusercontent.com/38988514/64109990-81ef9600-cd9e-11e9-9b38-a68e4f652d17.png) | 
-![Jamun-Single-Page-Browser](https://user-images.githubusercontent.com/38988514/64109992-81ef9600-cd9e-11e9-93f3-0aecd34c1d78.png)
+![Jamun-Single-Page-Browser-Options](https://user-images.githubusercontent.com/38988514/64109990-81ef9600-cd9e-11e9-9b38-a68e4f652d17.png) | ![Jamun-Single-Page-Browser](https://user-images.githubusercontent.com/38988514/64109992-81ef9600-cd9e-11e9-93f3-0aecd34c1d78.png)
 
 
 
@@ -169,14 +168,33 @@ allprojects {
 Step 2\. Add the dependency
 
 ```java
+Latest Version : 0.0.8
+
+Android
 dependencies {
-        compile 'tk.jamun.ui:mulitpagebrowser:0.0.2'
+     compile 'tk.jamun.ui:mulitpagebrowser:{Latest Version}'
 }
+
+AndroidX
+dependencies {
+     compile 'tk.jamunx.ui:mulitpagebrowser:{Latest Version}'
+}
+
+Kotlin
+dependencies {
+     compile 'tk.jamun-ktx.ui:mulitpagebrowser:{Latest Version}'
+}
+
 ```
 #### Maven
 ```xml
 <dependency>
+  Android
   <groupId>tk.jamun.ui</groupId>
+AndroidX
+  <groupId>tk.jamunx.ui</groupId>
+Kotlin
+  <groupId>tk.jamun-ktx.ui</groupId>
   <artifactId>mulitpagebrowser</artifactId>
   <version>0.0.2</version>
   <type>aar</type>
