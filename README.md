@@ -116,17 +116,17 @@ Latest Version : 0.0.8
 
 Android
 dependencies {
-     compile 'tk.jamun.ui:singlepagebrowser:{Latest Version}'
+     compile 'tk.jamun.ui:singletabbrowser:{Latest Version}'
 }
 
 AndroidX
 dependencies {
-     compile 'tk.jamunx.ui:singlepagebrowser:{Latest Version}'
+     compile 'tk.jamunx.ui:singletabbrowser:{Latest Version}'
 }
 
 Kotlin
 dependencies {
-     compile 'tk.jamun-ktx.ui:singlepagebrowser:{Latest Version}'
+     compile 'tk.jamun-ktx.ui:singletabbrowser:{Latest Version}'
 }
 ```
 #### Maven
